@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Template</title>
+    <title>Pig Latin Maker</title>
 
     <!-- Bootstrap -->
     <link href="css/bootstrap.css" rel="stylesheet">
@@ -20,8 +20,20 @@
 
   </head>
   <body>
-    <h1>Hello, world!</h1>
-
-
+    <h1>Pig Latin Maker!</h1>
+    <div class="container">
+      <form id="pigLatinInput">
+        <div class="form-group">
+          <label for="pigLatinText">Enter a word or sentence you want translated into pig latin!</label>
+          <input id="pigLatinText" type="text">
+        </div>
+        <button type="submit" class="btn btn-primary">Submit!</button>
+      </form>
+    </div>
+    <div class="container">
+      <div id="pigLatinResults">
+        <p>Results! <span class="endResult"></span></p>
+      </div>
+    </div>
   </body>
 </html>
